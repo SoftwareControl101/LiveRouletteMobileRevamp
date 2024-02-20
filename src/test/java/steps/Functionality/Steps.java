@@ -95,6 +95,7 @@ public class Steps {
             case "A Bet On Two Or More Betting Options" -> FuncTest30.placeABetOnTwoOrMoreBettingOptions();
             case "A Bet On Four Or More Betting Options" -> FuncTest31.placeABetOnFourOrMoreBettingOptions();
             case "And Confirm Any Betting Options" -> Functionality.placeAndConfirmAnyBettingOptions();
+            case "A Minimum Bet On Any Betting Options" -> Functionality.placeAMinimumBetOnAnyBettingOptions();
         }
     }
 

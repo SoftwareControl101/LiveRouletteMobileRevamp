@@ -266,7 +266,7 @@ Feature: Functionality
   @FunctionalityTest40
   Scenario: FT Test 40: Checking The Functionality After Betting Timer Reaches Last 10 Seconds And Not Confirming
     When I Enter The Dealer Table
-    And I Place "A Bet On Any Betting Options"
+    And I Place "A Minimum Bet On Any Betting Options"
     And I Wait "Until Betting Timer Reaches Last 10 Seconds"
     Then I Verify "The Functionality After Betting Timer Reaches Last 10 Seconds And Not Confirming"
 
