@@ -3,7 +3,6 @@ package modules.Functionality;
 import globals.BettingOption;
 import globals.TestMethod;
 import pages.DealerTable;
-import pages.LimitsAndPayouts;
 import pages.Menu;
 import pages.MyBets;
 import utilities.enums.HandleCollection;
@@ -54,21 +53,13 @@ public class Functionality extends TestMethod {
         WaitHandler.waitInvisibility(DealerTable.Label.PlaceYourBetsPlease, 150);
         roundId = getRoundId();
         oldBalance = GetHandler.getDouble(DealerTable.Label.BalanceValue);
+        GetHandler.getElements(DealerTable.Button.ChipOptions).get(1).click();
         EventHandler.click(DealerTable.BettingOption.getSideBet(BettingOption.RED));
     }
 
     public static void placeAndConfirmAnyBettingOptions() {
         placeABetOnAnyBettingOptions();
         EventHandler.click(DealerTable.Button.Confirm);
-    }
-
-    public static void placeAMinimumBetOnAnyBettingOptions() {
-        waitBettingPhase(40, false);
-        WaitHandler.waitInvisibility(DealerTable.Label.PlaceYourBetsPlease, 150);
-        roundId = getRoundId();
-        oldBalance = GetHandler.getDouble(DealerTable.Label.BalanceValue);
-        GetHandler.getElements(DealerTable.Button.ChipOptions).get(1).click();
-        EventHandler.click(DealerTable.BettingOption.getSideBet(BettingOption.RED));
     }
 
     public static void waitUntilRoundIsOver() {
