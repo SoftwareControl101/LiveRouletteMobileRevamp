@@ -1,7 +1,6 @@
 package steps.ResultAndStatistics;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import modules.ResultAndStatistics.*;
@@ -19,7 +18,7 @@ import java.util.List;
 
 public class Steps {
 
-    @And("I Enter The Dealer Table With 300 Rounds")
+    @When("I Enter The Dealer Table With 300 Rounds")
     public void iEnterTheDealerTableWithRounds() {
         EventHandler.click(GameLobby.Method.getDealerTable("Deals 300"));
         EventHandler.click(DealerTable.Button.SkipWelcome, HandleCollection.WithException);

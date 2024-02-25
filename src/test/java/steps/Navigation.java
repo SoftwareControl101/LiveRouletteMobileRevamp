@@ -47,7 +47,7 @@ public class Navigation {
             EventHandler.click(LiveCasino.Button.CloseBanner, HandleCollection.WithException);
             EventHandler.click(LiveCasino.Thumbnail.LiveRouletteRevamp);
             WaitHandler.wait(5);
-            WaitHandler.waitUrlContains("/dealerPage", 5);
+            WaitHandler.waitVisibility(GameLobby.Container.DealerTables, 5);
         };
         Printer printer = PrintHandler::printWarning;
         retrySteps(navigator, printer, "Go To Live Roulette Revamp.");
@@ -56,7 +56,7 @@ public class Navigation {
     @When("I Enter The Dealer Table")
     public void iEnterTheDealerTable() {
         Navigator navigator = () -> {
-            Component dealerTables = GameLobby.Container.DealerTables;
+            Component dealerTables = GameLobby.Method.getDealerTables();
             EventHandler.click(dealerTables, GetHandler.getElementByRandom(dealerTables));
             EventHandler.click(DealerTable.Button.SkipWelcome, HandleCollection.WithException);
         };

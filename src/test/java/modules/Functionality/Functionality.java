@@ -67,9 +67,4 @@ public class Functionality extends TestMethod {
         waitBettingPhase(0, false);
     }
 
-    public static void waitUntilBettingTimerReachesLastSeconds() {
-        waitBettingPhase(10, true);
-        WaitHandler.waitInvisibility(DealerTable.Label.PlaceYourBetsPlease, 150);
-    }
-
 }

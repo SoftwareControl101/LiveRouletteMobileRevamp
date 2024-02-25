@@ -28,7 +28,11 @@ public class ResAndStatsTest5_2 extends ResAndStats implements ResAndStatsCase {
         if (!DataTypeHandler.find(division, divisionList)) return;
 
         size = getSize(Statistics.Container.ZeroResults);
-        expectedZeroPercentage = Math.round(((float) size / totalResultHistory) * 100.0 * 100.0) / 100.0;
+        double redPercentage = Math.round(((float) getSize(Statistics.Container.RedResults) / totalResultHistory)
+                * 100.0 * 100.0) / 100.0;
+        double blackPercentage = Math.round(((float) getSize(Statistics.Container.BlackResults) / totalResultHistory)
+                * 100.0 * 100.0) / 100.0;
+        expectedZeroPercentage = 100.0 - (redPercentage + blackPercentage);
         oldZeroPercentage = actualZeroPercentage;
         actualZeroPercentage = getPercentage(Statistics.Label.ZeroPercentage);
     }

@@ -46,6 +46,7 @@ public class Steps {
             case "The Information Button On Statistics" -> EventHandler.click(Statistics.Button.OpenInformation, 2);
             case "The Close Button On Statistics Information" -> EventHandler.click(Statistics.Button.CloseInformation, 2);
             case "The Back Button On Statistics" -> EventHandler.click(Statistics.Button.CloseStatistics, 2);
+            case "The High Table Limits" -> FuncTest33.clickTheHighTableLimits();
         }
     }
 
@@ -70,7 +71,6 @@ public class Steps {
         switch (step) {
             case "Any Dealer Table With 300 Rounds" -> FuncTest2.enterAnyDealerTableWith300Rounds();
             case "Any Dealer Table" -> FuncTest6.enterAnyDealerTable();
-            case "The Dealer Table With High Table Limits" -> FuncTest33.enterTheDealerTableWithHighTableLimits();
         }
     }
 
@@ -83,7 +83,7 @@ public class Steps {
             case "Until Betting Timer Starts" -> WaitHandler.waitVisibility(DealerTable.Label.ShowDealing, 150);
             case "Until Betting Timer Ends" -> TestMethod.waitBettingPhase(1, true);
             case "Until Bet Wins" -> FuncTest39.waitUntilBetWins();
-            case "Until Betting Timer Reaches Last 10 Seconds" -> Functionality.waitUntilBettingTimerReachesLastSeconds();
+            case "Until Betting Timer Reaches Last 10 Seconds" -> TestMethod.waitBettingPhase(10, true);
         }
     }
 

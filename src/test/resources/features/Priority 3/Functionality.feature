@@ -216,7 +216,8 @@ Feature: Functionality
 
   @FunctionalityTest33
   Scenario: FT Test 33: Checking The Functionality Of The Top up And Confirm Button
-    When I Enter "The Dealer Table With High Table Limits"
+    When I Click "The High Table Limits"
+    And I Enter The Dealer Table
     And I Place "A Bet On Any Betting Options"
     Then I Verify "The Functionality Of The Confirm Button"
     And I Click "The Confirm Button"

@@ -7,14 +7,6 @@ import utilities.settings.Accounts;
 public class GameLobby {
 
     /***************************************************************************************************************
-     * These are the table component on the Game Lobby Page.
-     ***************************************************************************************************************/
-
-    private static final String tablesPath = Accounts.getEnvironment() == Environment.PRODUCTION ?
-            "//div[contains(@class, 'dealer_btn')]//span[not(contains(text(),'Maintenance'))]/ancestor::div[4]" :
-            "//div[contains(@class, 'dealer_top')]//p[(contains(text(),'Roulette X'))]/ancestor::div[2]";
-
-    /***************************************************************************************************************
      * These are the container components on the Game Lobby Page.
      ***************************************************************************************************************/
 
@@ -23,7 +15,7 @@ public class GameLobby {
                 "List of Dealer Tables",
                 "Container",
                 "Game Lobby Page",
-                tablesPath
+                "//div[@class='dealer station']"
         );
         public static Component DealerPhotos = new Component(
                 "List of Dealer Photos",
@@ -105,12 +97,6 @@ public class GameLobby {
                 "Game Lobby Page",
                 "//p[contains(normalize-space(), 'find a table and start betting')]"
         );
-        public static Component FirstNumberInRoadMap = new Component(
-                "First Number In RoadMap",
-                "Label",
-                "Game Lobby Page",
-                tablesPath + "[1]//ul[1]//li[1]"
-        );
         public static Component RedCounters = new Component(
                 "List of Red Counters",
                 "Label",
@@ -135,6 +121,12 @@ public class GameLobby {
                 "Game Lobby Page",
                 "//div[@class='dealer station']//div[@class='line_statistics']//div[4]//span[3]"
         );
+        public static Component FirstNumberInRoadMap = new Component(
+                "First Number In RoadMap",
+                "Label",
+                "Game Lobby Page",
+                Method.getDealerTables().getPath() + "[1]//ul[1]//li[1]"
+        );
     }
 
     /***************************************************************************************************************
@@ -142,12 +134,22 @@ public class GameLobby {
      ***************************************************************************************************************/
 
     public static class Method {
+        public static Component getDealerTables() {
+            return new Component(
+                    "List of Selected Dealer Tables",
+                    "Container",
+                    "Game Lobby Page",
+                    Accounts.getEnvironment() == Environment.PRODUCTION ?
+                            "//div[contains(@class, 'dealer_btn')]//span[not(contains(text(),'Maintenance'))]/ancestor::div[4]" :
+                            "//div[contains(@class, 'dealer_top')]//p[(contains(text(),'Roulette X'))]/ancestor::div[2]"
+            );
+        }
         public static Component getDealerTable(String dealsOrTable) {
             return new Component(
                     dealsOrTable + " Dealer Table",
                     "Container",
                     "Game Lobby Page",
-                    tablesPath + "//p[(contains(text(), '" +
+                    getDealerTables().getPath() + "//p[(contains(text(), '" +
                             dealsOrTable + "'))]/ancestor::div[2]"
             );
         }
@@ -156,7 +158,7 @@ public class GameLobby {
                     "List of All Counters in " + dealsOrTable + " Dealer Table",
                     "Label",
                     "Game Lobby Page",
-                    tablesPath + "//p[(contains(text(), '" + dealsOrTable +
+                    getDealerTables().getPath() + "//p[(contains(text(), '" + dealsOrTable +
                             "'))]/ancestor::div[2]//div[@class='line_statistics']//div//span[@class='number']"
             );
         }
@@ -165,7 +167,7 @@ public class GameLobby {
                     "Total Round Counter in " + dealsOrTable + " Dealer Table",
                     "Label",
                     "Game Lobby Page",
-                    tablesPath + "//p[(contains(text(), '" + dealsOrTable +
+                    getDealerTables().getPath() + "//p[(contains(text(), '" + dealsOrTable +
                             "'))]/ancestor::div[2]//div[@class='line_statistics']//div[4]//span[3]"
             );
         }
