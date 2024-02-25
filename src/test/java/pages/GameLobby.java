@@ -125,7 +125,7 @@ public class GameLobby {
                 "First Number In RoadMap",
                 "Label",
                 "Game Lobby Page",
-                Method.getDealerTables().getPath() + "[1]//ul[1]//li[1]"
+                "//div[@class='dealer station'][1]//ul[1]//li[1]"
         );
     }
 
