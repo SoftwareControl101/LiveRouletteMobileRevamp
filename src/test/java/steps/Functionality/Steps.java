@@ -46,7 +46,7 @@ public class Steps {
             case "The Information Button On Statistics" -> EventHandler.click(Statistics.Button.OpenInformation, 2);
             case "The Close Button On Statistics Information" -> EventHandler.click(Statistics.Button.CloseInformation, 2);
             case "The Back Button On Statistics" -> EventHandler.click(Statistics.Button.CloseStatistics, 2);
-            case "The High Table Limits" -> FuncTest33.clickTheHighTableLimits();
+            case "The High Table Limits" -> Functionality.clickTheHighTableLimits();
         }
     }
 
