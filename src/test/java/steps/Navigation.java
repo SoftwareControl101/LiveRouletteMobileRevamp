@@ -44,6 +44,8 @@ public class Navigation {
     @When("I Join Live Roulette Revamp")
     public void iJoinLiveRouletteRevamp() {
         Navigator navigator = () -> {
+            if (ConditionHandler.isDisplayed(GameLobby.Container.DealerTables, 5))
+                EventHandler.click(GameLobby.Button.Back, HandleCollection.WithException);
             EventHandler.click(LiveCasino.Button.CloseBanner, HandleCollection.WithException);
             EventHandler.click(LiveCasino.Thumbnail.LiveRouletteRevamp);
             WaitHandler.wait(5);
