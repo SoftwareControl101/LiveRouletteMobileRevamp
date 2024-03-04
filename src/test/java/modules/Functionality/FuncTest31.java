@@ -11,7 +11,7 @@ import utilities.objects.Component;
 public class FuncTest31 extends Functionality {
 
     public static void placeABetOnFourOrMoreBettingOptions() {
-        waitBettingPhase(45, true);
+        waitUntilRoundIsOver();
         WaitHandler.waitInvisibility(DealerTable.Label.PlaceYourBetsPlease, 150);
         EventHandler.click(DealerTable.BettingOption.getSideBet(BettingOption.RED));
         EventHandler.click(DealerTable.BettingOption.getSideBet(BettingOption.BLACK));
@@ -35,7 +35,7 @@ public class FuncTest31 extends Functionality {
     }
 
     private static void verifyUndone(Component bettingChip) {
-        AssertHandler.assertFalse(ConditionHandler.isDisplayed(bettingChip),
+        AssertHandler.assertFalse(ConditionHandler.isDisplayed(bettingChip, 1),
                 "** " + bettingChip.getName() + " is Removed and Undone",
                 "** " + bettingChip.getName() + " is Not Removed and Not Undone");
     }
