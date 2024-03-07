@@ -1,0 +1,20 @@
+Test Case: 1 , Division: 0 , Round Result: 18 RED 12 RED , Expected Result: 12 18 9 19 12 21 5 32 0 1 12 7 , Actual Result: 12 18 9 19 12 21 5 32 0 1 12 7 , Table Information: B8-19#64953139 , Other Information: 9 19 12 21 5 32 0 1 12 7 19 32
+Test Case: 2 , Division: 0 , Round Result: 18 RED , Expected Result: 18 RED , Actual Result: 18 RED , Table Information: B8-19#64953122 , Other Information: null
+Test Case: 3 , Division: 0 , Round Result: 2 BLACK , Expected Result: 2 BLACK , Actual Result: 2 BLACK , Table Information: B8-19#64953154 , Other Information: null
+Test Case: 4 , Division: 0 , Round Result: 0 GREEN , Expected Result: 0 GREEN , Actual Result: 0 GREEN , Table Information: B8-19#64953578 , Other Information: null
+Test Case: 5 , Division: 1 , Round Result: 18 RED , Expected Result: 50.67 , Actual Result: 50.67 , Table Information: B8-19#64953122 300.0 152 , Other Information: 50.67
+Test Case: 5 , Division: 2 , Round Result: 0 GREEN , Expected Result: 3.33 , Actual Result: 3.33 , Table Information: B8-19#64953578 300.0 10 , Other Information: 3.0
+Test Case: 5 , Division: 3 , Round Result: 2 BLACK , Expected Result: 46.0 , Actual Result: 46.0 , Table Information: B8-19#64953154 300.0 138 , Other Information: 46.0
+Test Case: 5 , Division: 4 , Round Result: 19 RED , Expected Result: 49.33 , Actual Result: 49.33 , Table Information: B8-19#64953172 300.0 148 , Other Information: 49.33
+Test Case: 5 , Division: 5 , Round Result: 18 RED , Expected Result: 47.67 , Actual Result: 47.67 , Table Information: B8-19#64953122 300.0 143 , Other Information: 47.67
+Test Case: 5 , Division: 6 , Round Result: 19 RED , Expected Result: 53.33 , Actual Result: 53.33 , Table Information: B8-19#64953172 300.0 160 , Other Information: 53.33
+Test Case: 5 , Division: 7 , Round Result: 18 RED , Expected Result: 43.67 , Actual Result: 43.67 , Table Information: B8-19#64953122 300.0 131 , Other Information: 43.67
+Test Case: 5 , Division: 8 , Round Result: 12 RED , Expected Result: 32.33 , Actual Result: 32.33 , Table Information: B8-19#64953139 300.0 97 , Other Information: 32.33
+Test Case: 5 , Division: 9 , Round Result: 18 RED , Expected Result: 24.33 , Actual Result: 24.33 , Table Information: B8-19#64953122 300.0 73 , Other Information: 24.33
+Test Case: 5 , Division: 10 , Round Result: 35 BLACK , Expected Result: 39.33 , Actual Result: 39.33 , Table Information: B8-19#64953318 300.0 118 , Other Information: 39.0
+Test Case: 5 , Division: 11 , Round Result: 19 RED , Expected Result: 28.0 , Actual Result: 28.0 , Table Information: B8-19#64953172 300.0 84 , Other Information: 27.67
+Test Case: 5 , Division: 12 , Round Result: 2 BLACK , Expected Result: 33.67 , Actual Result: 33.67 , Table Information: B8-19#64953154 300.0 101 , Other Information: 33.33
+Test Case: 5 , Division: 13 , Round Result: 18 RED , Expected Result: 35.33 , Actual Result: 35.33 , Table Information: B8-19#64953122 300.0 106 , Other Information: 35.0
+Test Case: 5 , Division: 14 , Round Result: 33 BLACK , Expected Result: {33-16}{27-14}{32-14}{9-12}{26-12} , Actual Result: {33-16}{27-14}{32-14}{9-12}{26-12} , Table Information: B8-19#64953334 , Other Information: {33-15}{27-14}{32-14}{9-12}{12-12}
+Test Case: 5 , Division: 15 , Round Result: 18 RED , Expected Result: {13-166}{17-145}{24-121}{36-109}{2-74} , Actual Result: {13-166}{17-145}{24-121}{36-109}{2-74} , Table Information: B8-19#64953122 , Other Information: {13-165}{17-144}{24-120}{36-108}{2-73}
+Test Case: 5 , Division: 16 , Round Result: 2 BLACK , Expected Result: {13-168}{17-147}{24-123}{36-111}{15-74} , Actual Result: {13-168}{17-147}{24-123}{36-111}{15-74} , Table Information: B8-19#64953154 , Other Information: {13-167}{17-146}{24-122}{36-110}{2-75}
