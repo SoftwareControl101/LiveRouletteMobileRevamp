@@ -1,0 +1,20 @@
+Test Case: 1 , Division: 0 , Round Result: 4 BLACK 19 RED , Expected Result: 19 4 20 22 17 17 30 18 26 18 1 28 , Actual Result: 19 4 20 22 17 17 30 18 26 18 1 28 , Table Information: A8-12#65152864 , Other Information: 20 22 17 17 30 18 26 18 1 28 6 14
+Test Case: 2 , Division: 0 , Round Result: 19 RED , Expected Result: 19 RED , Actual Result: 19 RED , Table Information: A8-12#65152864 , Other Information: null
+Test Case: 3 , Division: 0 , Round Result: 4 BLACK , Expected Result: 4 BLACK , Actual Result: 4 BLACK , Table Information: A8-12#65152849 , Other Information: null
+Test Case: 4 , Division: 0 , Round Result: 0 GREEN , Expected Result: 0 GREEN , Actual Result: 0 GREEN , Table Information: A8-12#65152895 , Other Information: null
+Test Case: 5 , Division: 1 , Round Result: 19 RED , Expected Result: 48.0 , Actual Result: 48.0 , Table Information: A8-12#65152864 300.0 144 , Other Information: 47.67
+Test Case: 5 , Division: 2 , Round Result: 0 GREEN , Expected Result: 4.0 , Actual Result: 4.0 , Table Information: A8-12#65152895 300.0 12 , Other Information: 3.66
+Test Case: 5 , Division: 3 , Round Result: 4 BLACK , Expected Result: 48.67 , Actual Result: 48.67 , Table Information: A8-12#65152849 300.0 146 , Other Information: 48.67
+Test Case: 5 , Division: 4 , Round Result: 19 RED , Expected Result: 46.67 , Actual Result: 46.67 , Table Information: A8-12#65152864 300.0 140 , Other Information: 46.67
+Test Case: 5 , Division: 5 , Round Result: 4 BLACK , Expected Result: 49.67 , Actual Result: 49.67 , Table Information: A8-12#65152849 300.0 149 , Other Information: 49.67
+Test Case: 5 , Division: 6 , Round Result: 19 RED , Expected Result: 47.0 , Actual Result: 47.0 , Table Information: A8-12#65152864 300.0 141 , Other Information: 46.67
+Test Case: 5 , Division: 7 , Round Result: 4 BLACK , Expected Result: 49.67 , Actual Result: 49.67 , Table Information: A8-12#65152849 300.0 149 , Other Information: 49.33
+Test Case: 5 , Division: 8 , Round Result: 4 BLACK , Expected Result: 32.67 , Actual Result: 32.67 , Table Information: A8-12#65152849 300.0 98 , Other Information: 32.33
+Test Case: 5 , Division: 9 , Round Result: 19 RED , Expected Result: 32.67 , Actual Result: 32.67 , Table Information: A8-12#65152864 300.0 98 , Other Information: 32.67
+Test Case: 5 , Division: 10 , Round Result: 25 RED , Expected Result: 31.0 , Actual Result: 31.0 , Table Information: A8-12#65152911 300.0 93 , Other Information: 30.67
+Test Case: 5 , Division: 11 , Round Result: 4 BLACK , Expected Result: 24.33 , Actual Result: 24.33 , Table Information: A8-12#65152849 300.0 73 , Other Information: 24.0
+Test Case: 5 , Division: 12 , Round Result: 20 BLACK , Expected Result: 34.33 , Actual Result: 34.33 , Table Information: A8-12#65152997 300.0 103 , Other Information: 34.33
+Test Case: 5 , Division: 13 , Round Result: 21 RED , Expected Result: 36.33 , Actual Result: 36.33 , Table Information: A8-12#65152963 300.0 109 , Other Information: 36.33
+Test Case: 5 , Division: 14 , Round Result: 36 RED , Expected Result: {11-13}{36-13}{18-12}{33-12}{0-12} , Actual Result: {11-13}{36-13}{18-12}{33-12}{0-12} , Table Information: A8-12#65153015 , Other Information: {11-13}{18-12}{33-12}{36-12}{0-12}
+Test Case: 5 , Division: 15 , Round Result: 4 BLACK , Expected Result: {13-148}{25-123}{12-99}{3-78}{7-70} , Actual Result: {13-148}{25-123}{12-99}{3-78}{7-70} , Table Information: A8-12#65152849 , Other Information: {13-147}{25-122}{12-98}{3-77}{7-69}
+Test Case: 5 , Division: 16 , Round Result: 25 RED , Expected Result: {13-152}{12-103}{3-82}{7-74}{35-59} , Actual Result: {13-152}{12-103}{3-82}{7-74}{35-59} , Table Information: A8-12#65152911 , Other Information: {13-151}{25-126}{12-102}{3-81}{7-73}
